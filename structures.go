@@ -1,9 +1,10 @@
 package model
 
 import (
-	"google.golang.org/appengine/datastore"
 	"net/http"
 	"time"
+
+	"google.golang.org/appengine/datastore"
 )
 
 type ModelConnector interface {
