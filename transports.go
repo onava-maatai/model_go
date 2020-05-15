@@ -1,4 +1,4 @@
-package model
+package model_go
 
 // FirstBlockTransport is a container of the first two blocks of the chain
 // with their following Firsts Transactions
