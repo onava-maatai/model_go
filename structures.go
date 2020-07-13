@@ -85,6 +85,8 @@ type ModelDatabase interface {
 	NextTransactionSign(cursor StorageCursor) ([]byte, bool)
 	BlockTransactionsCursorClose(mod StorageCursor)
 
+	BlockExists(BlockSign string) bool
+
 	/*
 		Query
 	*/
