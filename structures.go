@@ -13,6 +13,7 @@ type ModelConnector interface {
 	Coordinator
 	*/
 
+	SetConnectionString(connect string)
 }
 
 type ModelDatabase interface {
@@ -146,6 +147,7 @@ type BlockRequestTransport struct {
 Structures for nodes
 */
 type NodeIdentification struct {
+	ID         uint   `gorm:"primaryKey"`
 	Creation   int64  `json:",omitempty"`
 	PublicKey  string `json:",omitempty"`
 	PrivateKey string `json:",omitempty"`
