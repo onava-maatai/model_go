@@ -108,6 +108,7 @@ Structures for Coordinator
 */
 
 type MasterKey struct {
+	ID                 uint `gorm:"primaryKey"`
 	MasterPublicKey    []byte
 	URL                string
 	CoordinatorPublic  []byte
