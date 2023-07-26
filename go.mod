@@ -1,4 +1,4 @@
-module github.com/crypt0cloud/model_go
+module github.com/onava-maatai/model_go
 
 go 1.12
 
