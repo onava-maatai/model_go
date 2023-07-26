@@ -108,7 +108,7 @@ Structures for Coordinator
 */
 
 type MasterKey struct {
-	ID                 uint `gorm:"primaryKey"`
+	ID                 int `gorm:"primaryKey"`
 	MasterPublicKey    []byte
 	URL                string
 	CoordinatorPublic  []byte
@@ -148,7 +148,7 @@ type BlockRequestTransport struct {
 Structures for nodes
 */
 type NodeIdentification struct {
-	ID         uint   `gorm:"primaryKey"`
+	ID         int   `gorm:"primaryKey"`
 	Creation   int64  `json:",omitempty"`
 	PublicKey  string `json:",omitempty"`
 	PrivateKey string `json:",omitempty"`
